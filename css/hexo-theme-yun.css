@@ -263,21 +263,6 @@ body::before {
     opacity: 1;
   }
 }
-body {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur"), auto;
-}
-a {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), auto;
-}
-a:hover {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), auto;
-}
-.hty-icon-button {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), pointer;
-}
-input {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur"), auto;
-}
 :root {
   --banner-line-color: #000;
   --banner-char-color: #000;
@@ -845,7 +830,7 @@ input {
 }
 .wordcloud #wordcloud-canvas,
 .wordcloud #wordcloud-sidebar-canvas {
-  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), pointer;
+  cursor: url("$cursor-pointer"), pointer;
 }
 .wordcloud #wordbox {
   pointer-events: none;
@@ -1148,52 +1133,6 @@ input {
   top: 0;
   z-index: 11;
   pointer-events: none;
-}
-#trianglifyContainer {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  opacity: 0.5;
-  animation: triFadeIn 2s;
-}
-@-moz-keyframes triFadeIn {
-  from {
-    opacity: 0;
-    filter: grayscale(1);
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-@-webkit-keyframes triFadeIn {
-  from {
-    opacity: 0;
-    filter: grayscale(1);
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-@-o-keyframes triFadeIn {
-  from {
-    opacity: 0;
-    filter: grayscale(1);
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-@keyframes triFadeIn {
-  from {
-    opacity: 0;
-    filter: grayscale(1);
-  }
-  to {
-    opacity: 0.5;
-  }
 }
 .spinner {
   width: 60px;
@@ -1952,17 +1891,6 @@ input {
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 1.5;
-}
-.site-author-status {
-  position: absolute;
-  height: 1.8rem;
-  width: 1.8rem;
-  bottom: 0;
-  right: 0;
-  line-height: 1.8rem;
-  border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  background-color: #fff;
 }
 .site-name {
   color: var(--hty-text-color);
